@@ -1,18 +1,25 @@
 <template>
-    <div class="home">
+    <div>
       <ProductList />
     </div>
-  </template>
+</template>
  
-  <script>
-  // @ is an alias to /src
-  import ProductList from '@/components/ProductList.vue'
- 
-  export default {
-    name: 'Index',
-    components: {
-      ProductList
-    }
+<script>
+// @ is an alias to /src
+import ProductList from '@/components/ProductList.vue'
+
+export default {
+  name: 'Index',
+  components: {
+    ProductList
   }
-  </script>
-  
+}
+</script>
+
+<style>
+@import '../../reset.css';
+  div {
+    background-color: #9FE2BF;
+    height: 100vh;
+  } 
+</style>
