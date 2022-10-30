@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Income and Expenses</h1>
+        <h1>Title</h1>
       <ProductList />
     </div>
 </template>
@@ -17,10 +17,3 @@ export default {
 }
 </script>
 
-<style>
-@import '../../reset.css';
-  div {
-    background-color: #9FE2BF;
-    height: 100vh;
-  } 
-</style>
