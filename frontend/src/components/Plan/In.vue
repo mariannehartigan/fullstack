@@ -2,7 +2,7 @@
     <p class="vertical">In</p>
 
     <div>
-        <p v-for="item in items" :key="item.product_id">{{ item.product_name}}</p>
+        <p v-for="income in income_data" :key="income.income_id">{{ income.income_description}}</p>
     </div>
 </template>
  
@@ -11,18 +11,18 @@ import axios from "axios"
 export default {
     data() {
         return {
-            items: [],
+            income_data: [],
         }
     },
     created() {
-        this.getProducts();
+        this.getIncomeData();
     },
     methods: {
-        async getProducts() {
+        async getIncomeData() {
             try {
-                const response = await axios.get("http://localhost:5000/products")
-                this.items = response.data
-                console.log(this.items)
+                const response = await axios.get("http://localhost:5000/plan")
+                this.income_data = response.data
+                console.log(this.income_data)
             } catch (err) {
                 console.log(err)
             }
