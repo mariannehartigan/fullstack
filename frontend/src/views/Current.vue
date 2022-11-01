@@ -1,5 +1,5 @@
 <template>
     <div class="about">
-      <h1>Plan/Actual</h1>
+      <h1>Current</h1>
     </div>
   </template>

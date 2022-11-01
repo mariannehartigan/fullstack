@@ -1,5 +1,6 @@
 <template>
     <div>
+      <In />
       <ProductList />
     </div>
 </template>
@@ -7,11 +8,13 @@
 <script>
 // @ is an alias to /src
 import ProductList from '@/components/ProductList.vue'
+import In from '@/components/Plan/In.vue'
 
 export default {
-  name: 'IncomeExpenses',
+  name: 'Plan',
   components: {
-    ProductList
+    ProductList,
+    In
   }
 }
 </script>

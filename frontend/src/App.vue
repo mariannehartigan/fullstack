@@ -36,4 +36,8 @@
     text-align: center;
     background: white;
   }
+
+  .vertical {
+    transform: rotate(-90deg);
+  }
 </style>
