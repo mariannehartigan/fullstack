@@ -1,9 +1,19 @@
 <template>
+    <div class="inContainer">
     <p class="vertical">In</p>
 
-    <div>
-        <p v-for="income in income_data" :key="income.income_id">{{ income.income_description}}</p>
+    <div class="allData">
+        <div 
+            class="individualData" 
+            v-for="income in income_data" 
+            :key="income.income_id">
+            <div>{{ income.income_description}}</div>
+            <div>{{ income.income_amount}}</div>
+            <div>{{ income.income_day_of_month}}</div>
+        </div>
     </div>
+    </div>
+
 </template>
  
 <script>
@@ -30,3 +40,8 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+
+
+</style>

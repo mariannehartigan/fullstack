@@ -18,6 +18,7 @@
     display: grid;
     grid-template-rows: 8vh auto 8vh;
     min-height: 100vh;
+    overflow-y: hidden;
 
     font-size: 1vw;
     background-color: #9FE2BF;
