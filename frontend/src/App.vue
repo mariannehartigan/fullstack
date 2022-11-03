@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="header">
-      <h1>Header</h1>
+      <img class="logo" src="../../logo.png" />
     </div>
     <div class="content">
       <router-view/>
@@ -16,7 +16,7 @@
 @import '../reset.css';
   .container {
     display: grid;
-    grid-template-rows: 8vh auto 8vh;
+    grid-template-rows: 8vh auto 4.5vh;
     min-height: 100vh;
     overflow-y: hidden;
 
@@ -25,8 +25,11 @@
   } 
 
   .header {
-    text-align: center;
     background: white;
+  }
+
+  .logo {
+    height: 8vh;
   }
 
   .content {
@@ -38,7 +41,4 @@
     background: white;
   }
 
-  .vertical {
-    transform: rotate(-90deg);
-  }
 </style>

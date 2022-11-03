@@ -1,6 +1,6 @@
 <template>
-    <div class="inContainer">
-        <div class="vertical"><span class="title">In</span></div>
+    <div class="outContainer">
+        <div class="vertical"><span class="title">Out</span></div>
         <div class="allData">
             <div 
                 class="individualData" 
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-.inContainer{
+.outContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
